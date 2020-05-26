@@ -10,8 +10,10 @@
 <body>
     <div id="root"></div>
     <script type="text/javascript">
-        var headerStyle = { "style": { "color": "blue " } };
-        ReactDOM.render(React.createElement("h1", headerStyle, "안녕하세요."), document.getElementById("root"));
+        ReactDOM.render(
+            React.createElement("h1", { "style": { "color": "blue" } }, "안녕하세요."),
+            document.getElementById("root")
+        );
     </script>
 </body>
 </html>
