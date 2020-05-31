@@ -23,6 +23,8 @@ import InlineStyle from './components/Demos/InlineStyles/InlineStyles';
 
 import './custom.css'
 
+import { OneWayBinding } from './components/Demos/OneWayBinding/OneWayBinding';
+
 export default class App extends Component {
     static displayName = App.name;
 
@@ -52,6 +54,8 @@ export default class App extends Component {
                 <Route path='/Ideas' component={Ideas} />
 
                 <Route path='/InlineStyles' component={InlineStyle} />
+
+                <Route path='/OneWayBinding' component={ OneWayBinding } /> 
             </Layout>
         );
     }
