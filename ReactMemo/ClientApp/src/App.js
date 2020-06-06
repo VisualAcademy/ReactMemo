@@ -24,6 +24,8 @@ import InlineStyle from './components/Demos/InlineStyles/InlineStyles';
 import './custom.css'
 
 import { OneWayBinding } from './components/Demos/OneWayBinding/OneWayBinding';
+import { MapFunctionDemo } from './components/Demos/MapFunctionDemo/MapFunctionDemo';
+import { MapFunctionBookList } from './components/Demos/MapFunctionBookList/MapFunctionBookList';
 
 export default class App extends Component {
     static displayName = App.name;
@@ -55,7 +57,10 @@ export default class App extends Component {
 
                 <Route path='/InlineStyles' component={InlineStyle} />
 
-                <Route path='/OneWayBinding' component={ OneWayBinding } /> 
+                <Route path='/OneWayBinding' component={OneWayBinding} /> 
+
+                <Route path='/MapFunctionDemo' component={MapFunctionDemo} />
+                <Route path='/MapFunctionBookList' component={MapFunctionBookList} />
             </Layout>
         );
     }
