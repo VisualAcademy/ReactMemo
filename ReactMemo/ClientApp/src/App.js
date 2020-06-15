@@ -28,6 +28,7 @@ import { OneWayBinding } from './components/Demos/OneWayBinding/OneWayBinding';
 import { MapFunctionDemo } from './components/Demos/MapFunctionDemo/MapFunctionDemo';
 import { MapFunctionBookList } from './components/Demos/MapFunctionBookList/MapFunctionBookList';
 import StateDescription from './components/Demos/StateDescription/StateDescription';
+import OnClickEventHandler from './components/Samples/OnClickEventHandler';
 
 export default class App extends Component {
     static displayName = App.name;
@@ -59,6 +60,8 @@ export default class App extends Component {
                 <Route path='/StateObjectLiteral' component={StateObjectLiteral} />
 
                 <Route path='/OnClickDemo' component={OnClickDemo} />
+
+                <Route path="/OnClickEventHandler" component={OnClickEventHandler} />
 
                 <Route path='/Ideas' component={Ideas} />
 
