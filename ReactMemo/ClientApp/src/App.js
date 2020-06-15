@@ -14,6 +14,7 @@ import { PropsDemo } from './components/Demos/PropsDemo/PropsDemo';
 import { PropsChildrenDemo } from './components/Demos/PropsChildrenDemo/PropsChildrenDemo';
 import { DestructuringAssignmentDemo } from './components/Demos/DestructuringAssignmentDemo/DestructuringAssignmentDemo';
 import { StateDemo } from './components/Demos/StateDemo/StateDemo';
+
 import { StateObjectLiteral } from './components/Demos/StateObjectLiteral/StateObjectLiteral';
 import { OnClickDemo } from './components/Demos/OnClickDemo/OnClickDemo';
 import { BooksIndex } from './components/Books/BooksIndex';
@@ -26,6 +27,7 @@ import './custom.css'
 import { OneWayBinding } from './components/Demos/OneWayBinding/OneWayBinding';
 import { MapFunctionDemo } from './components/Demos/MapFunctionDemo/MapFunctionDemo';
 import { MapFunctionBookList } from './components/Demos/MapFunctionBookList/MapFunctionBookList';
+import StateDescription from './components/Demos/StateDescription/StateDescription';
 
 export default class App extends Component {
     static displayName = App.name;
@@ -49,8 +51,13 @@ export default class App extends Component {
                 <Route path="/PropsDemo" component={PropsDemo} />
                 <Route path="/PropsChildrenDemo" component={PropsChildrenDemo} />
                 <Route path='/DestructuringAssignmentDemo' component={DestructuringAssignmentDemo} />
+
                 <Route path='/StateDemo' component={StateDemo} />
+
+                <Route path="/StateDescription" component={StateDescription} />
+
                 <Route path='/StateObjectLiteral' component={StateObjectLiteral} />
+
                 <Route path='/OnClickDemo' component={OnClickDemo} />
 
                 <Route path='/Ideas' component={Ideas} />
