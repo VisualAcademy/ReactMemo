@@ -30,6 +30,8 @@ import { MapFunctionBookList } from './components/Demos/MapFunctionBookList/MapF
 import StateDescription from './components/Demos/StateDescription/StateDescription';
 import OnClickEventHandler from './components/Samples/OnClickEventHandler';
 
+import FetchApiPractice from './components/Samples/FetchApiPractice';
+
 export default class App extends Component {
     static displayName = App.name;
 
@@ -71,6 +73,8 @@ export default class App extends Component {
 
                 <Route path='/MapFunctionDemo' component={MapFunctionDemo} />
                 <Route path='/MapFunctionBookList' component={MapFunctionBookList} />
+
+                <Route path='/FetchApiPractice' component={FetchApiPractice} />
             </Layout>
         );
     }
