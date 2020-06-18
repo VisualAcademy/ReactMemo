@@ -31,6 +31,8 @@ import StateDescription from './components/Demos/StateDescription/StateDescripti
 import OnClickEventHandler from './components/Samples/OnClickEventHandler';
 
 import FetchApiPractice from './components/Samples/FetchApiPractice';
+import TextBoxOnChangeEventHandler from './components/Samples/TextBoxOnChangeEventHandler';
+import ReactFragmentDemo from './components/Samples/ReactFragmentDemo';
 
 export default class App extends Component {
     static displayName = App.name;
@@ -75,6 +77,9 @@ export default class App extends Component {
                 <Route path='/MapFunctionBookList' component={MapFunctionBookList} />
 
                 <Route path='/FetchApiPractice' component={FetchApiPractice} />
+                <Route path='/TextBoxOnChangeEventHandler' component={TextBoxOnChangeEventHandler} />
+
+                <Route path='/ReactFragmentDemo' component={ReactFragmentDemo} />
             </Layout>
         );
     }
