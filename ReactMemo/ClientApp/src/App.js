@@ -46,7 +46,7 @@ export default class App extends Component {
                 <Route path='/fetch-data' component={FetchData} />
                 <Route path='/about' component={About} />
                 <Route path='/contact' component={Contact} />
-                <Route path={['/Books', '/Books/Index']} component={BooksIndex} exact="true" />
+                <Route path={['/Books', '/Books/Index']} component={BooksIndex} exact={true} />
                 <Route path={['/Books/Create', '/Books/Create:Id']} component={BooksCreate} />
 
                 <Route path='/FunctionStateDemo' component={FunctionStateDemo} />
