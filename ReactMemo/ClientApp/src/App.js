@@ -35,6 +35,7 @@ import TextBoxOnChangeEventHandler from './components/Samples/TextBoxOnChangeEve
 import ReactFragmentDemo from './components/Samples/ReactFragmentDemo';
 import FunctionStateDemo from './components/Samples/FunctionStateDemo';
 import UseEffectDemo from './components/Samples/UseEffectDemo';
+import UseEffectFetchApi from './components/Samples/UseEffectFetchApi';
 
 export default class App extends Component {
     static displayName = App.name;
@@ -49,7 +50,7 @@ export default class App extends Component {
                 <Route path='/contact' component={Contact} />
                 <Route path={['/Books', '/Books/Index']} component={BooksIndex} exact={true} />
                 <Route path={['/Books/Create', '/Books/Create:Id']} component={BooksCreate} />
-
+                <Route path="/UseEffectFetchApi" component={UseEffectFetchApi} />
                 <Route path='/FunctionStateDemo' component={FunctionStateDemo} />
                 <Route path="/UseEffectDemo" component={UseEffectDemo} />
 
