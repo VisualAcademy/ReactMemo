@@ -33,6 +33,7 @@ import OnClickEventHandler from './components/Samples/OnClickEventHandler';
 import FetchApiPractice from './components/Samples/FetchApiPractice';
 import TextBoxOnChangeEventHandler from './components/Samples/TextBoxOnChangeEventHandler';
 import ReactFragmentDemo from './components/Samples/ReactFragmentDemo';
+import FunctionStateDemo from './components/Samples/FunctionStateDemo';
 
 export default class App extends Component {
     static displayName = App.name;
@@ -48,6 +49,7 @@ export default class App extends Component {
                 <Route path={['/Books', '/Books/Index']} component={BooksIndex} exact="true" />
                 <Route path={['/Books/Create', '/Books/Create:Id']} component={BooksCreate} />
 
+                <Route path='/FunctionStateDemo' component={FunctionStateDemo} />
 
                 <Route path='/hellocomponent' component={HelloComponent} />
                 <Route path='/StyleAttribute' component={StyleAttribute} />
