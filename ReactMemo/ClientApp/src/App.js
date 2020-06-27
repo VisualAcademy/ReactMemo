@@ -34,6 +34,7 @@ import FetchApiPractice from './components/Samples/FetchApiPractice';
 import TextBoxOnChangeEventHandler from './components/Samples/TextBoxOnChangeEventHandler';
 import ReactFragmentDemo from './components/Samples/ReactFragmentDemo';
 import FunctionStateDemo from './components/Samples/FunctionStateDemo';
+import UseEffectDemo from './components/Samples/UseEffectDemo';
 
 export default class App extends Component {
     static displayName = App.name;
@@ -50,6 +51,7 @@ export default class App extends Component {
                 <Route path={['/Books/Create', '/Books/Create:Id']} component={BooksCreate} />
 
                 <Route path='/FunctionStateDemo' component={FunctionStateDemo} />
+                <Route path="/UseEffectDemo" component={UseEffectDemo} />
 
                 <Route path='/hellocomponent' component={HelloComponent} />
                 <Route path='/StyleAttribute' component={StyleAttribute} />
