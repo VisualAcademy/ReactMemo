@@ -33,6 +33,7 @@ import FunctionStateDemo from './components/Samples/FunctionStateDemo';
 import UseEffectDemo from './components/Samples/UseEffectDemo';
 import UseEffectFetchApi from './components/Samples/UseEffectFetchApi';
 import TodoListInMemory from './components/TodoListInMemory';
+import { PropsTypesDemo } from './components/Demos/PropsTypesDemo/PropsTypesDemo';
 
 export default class App extends Component {
     static displayName = App.name;
@@ -56,6 +57,7 @@ export default class App extends Component {
                 <Route path="/MyComponent" component={MyComponent} />
                 <Route path="/PropsDemo" component={PropsDemo} />
                 <Route path="/PropsChildrenDemo" component={PropsChildrenDemo} />
+                <Route path='/PropsTypesDemo' component={PropsTypesDemo} />
                 <Route path='/DestructuringAssignmentDemo' component={DestructuringAssignmentDemo} />
                 <Route path='/StateDemo' component={StateDemo} />
                 <Route path="/StateDescription" component={StateDescription} />
